@@ -1,0 +1,78 @@
+.project {
+  display: flex;
+  margin: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  min-height: 250px;
+}
+
+.project.left .project-image {
+  order: 1;
+}
+
+.project.right .project-image {
+  order: 0;
+}
+
+.project-image {
+  position: relative;
+  width: 426px;
+  height: 240px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.project-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.project-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-image:hover .overlay {
+  opacity: 1;
+}
+
+.project-image .overlay h2 {
+  margin: 0;
+  font-size: 24px;
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+
+.project-description {
+  font-family: var(--secondary-font);
+  padding: 20px;
+  width: calc(100% - 426px - 20px);
+}
+
+.project-description p {
+  margin: 0;
+}

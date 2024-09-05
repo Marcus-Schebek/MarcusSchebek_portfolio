@@ -1,0 +1,28 @@
+.tech-stack-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.tech-stack-title {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tech-icons span {
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-icons span:hover {
+  transform: scale(1.1);
+}
