@@ -8,7 +8,7 @@ interface ThreeDModelProps {
 }
 
 const RotatingModel: React.FC<ThreeDModelProps> = ({ onModelLoad }) => {
-  const { scene } = useGLTF('src/assets/low_poly_computer_with_devices.glb');
+  const { scene } = useGLTF('./assets/low_poly_computer_with_devices.glb');
   const ref = useRef<THREE.Group>(null!);
   const [isAnimating, setIsAnimating] = useState(true);
 
