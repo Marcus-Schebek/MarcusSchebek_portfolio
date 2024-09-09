@@ -12,9 +12,9 @@
 }
 
 .tech-icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 0fr));
   justify-content: center;
-  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 30px;
 }
