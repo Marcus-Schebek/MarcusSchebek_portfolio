@@ -15,8 +15,6 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({
-    imageSrc,
-    imageAlt,
     hoverImageSrc,
     hoverImageAlt,
     title,
@@ -31,11 +29,12 @@ const Project: React.FC<ProjectProps> = ({
         className={`project ${imagePosition}`} 
         style={{ backgroundColor: backgroundColor, color: fontColor }} 
         data-aos={slideEffect}>
-            <div className="project-image">
-                <img src={imageSrc} alt={imageAlt} className="image-normal" />
-                <img src={hoverImageSrc} alt={hoverImageAlt} className="image-hover" />
-                <div className="overlay">
-                    <h2>{title}</h2>
+            <div className="project-image-wrapper">
+                <div className="project-image">
+                    <img src={hoverImageSrc} alt={hoverImageAlt} className="image-hover" />
+                    <div className="overlay">
+                        <h2>{title}</h2>
+                    </div>
                 </div>
             </div>
             <div className="project-description">
