@@ -26,7 +26,9 @@ const Banner: React.FC = () => {
         </div>
         <div className="Apresentation">
           <div className="contact">
-            <img src={GithubIcon} alt="github-icon" />
+            <a href="https://github.com/Marcus-Schebek" target="_blank" rel="noopener noreferrer">
+              <img src={GithubIcon} alt="github-icon" />
+            </a>
             <img src={CvIcon} alt="cv-icon" />
             <button onClick={scrollToContactForm}>
               Me Contate
