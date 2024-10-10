@@ -16,6 +16,7 @@ const ContactForm: React.FC = () => {
       <form 
         className="contact-form"
         action="https://formsubmit.co/marcusschebek@gmail.com" 
+        method="POST" // Adicionado o método POST
       >
         <div className="form-group">
           <label htmlFor="name">Nome</label>
