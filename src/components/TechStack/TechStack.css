@@ -4,7 +4,7 @@
 }
 
 .tech-stack-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: var(--primary-font);
   color: var(--secondary-color);
@@ -12,8 +12,8 @@
 }
 
 .tech-icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 0fr));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
@@ -25,4 +25,14 @@
 
 .tech-icons span:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .tech-stack-title {
+    font-size: 2rem;
+  }
+
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
 }

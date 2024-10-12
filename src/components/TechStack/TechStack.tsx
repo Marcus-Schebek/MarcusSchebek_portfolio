@@ -16,17 +16,11 @@ const TechStack: React.FC = () => {
                 <span onClick={() => window.open('https://www.php.net', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40" />
                 </span>
-                <span onClick={() => window.open('https://nodejs.org', '_blank')} style={{ cursor: 'pointer' }}>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" />
-                </span>
                 <span onClick={() => window.open('https://spring.io/', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="spring" width="40" height="40" />
                 </span>
                 <span onClick={() => window.open('https://www.w3schools.com/cs/', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40" />
-                </span>
-                <span onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript', '_blank')} style={{ cursor: 'pointer' }}>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />
                 </span>
                 <span onClick={() => window.open('https://www.typescriptlang.org/', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40" />
@@ -36,9 +30,6 @@ const TechStack: React.FC = () => {
                 </span>
                 <span onClick={() => window.open('https://vuejs.org/', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40" />
-                </span>
-                <span onClick={() => window.open('https://sass-lang.com', '_blank')} style={{ cursor: 'pointer' }}>
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40" />
                 </span>
                 <span onClick={() => window.open('https://www.docker.com/', '_blank')} style={{ cursor: 'pointer' }}>
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40" />
