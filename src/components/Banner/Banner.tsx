@@ -30,13 +30,9 @@ const Banner: React.FC = () => {
               <img src={GithubIcon} alt="github-icon" />
             </a>
             <img src={CvIcon} alt="cv-icon" />
-            <button onClick={scrollToContactForm}>
-              Me Contate
-            </button>
+            <button onClick={scrollToContactForm}>Me Contate</button>
           </div>
-          <p>
-            Sou um estudante de Engenharia da Computação e tenho experiência em projetos que você precisa ver!
-          </p>
+          <p>Sou um estudante de Engenharia da Computação e tenho experiência em projetos que você precisa ver!</p>
         </div>
       </aside>
       <aside className="ThreeDModel-container">
