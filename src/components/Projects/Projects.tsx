@@ -18,7 +18,6 @@ const Project: React.FC<ProjectProps> = ({
     hoverImageSrc,
     hoverImageAlt,
     title,
-    slideEffect,
     description,
     imagePosition = 'left',
     backgroundColor = '#f5f5f5', 
@@ -27,8 +26,7 @@ const Project: React.FC<ProjectProps> = ({
     return (
         <div 
         className={`project ${imagePosition}`} 
-        style={{ backgroundColor: backgroundColor, color: fontColor }} 
-        data-aos={slideEffect}>
+        style={{ backgroundColor: backgroundColor, color: fontColor }}>
             <div className="project-image-wrapper">
                 <div className="project-image">
                     <img src={hoverImageSrc} alt={hoverImageAlt} className="image-hover" />
