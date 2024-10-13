@@ -16,7 +16,7 @@ function App() {
       <Banner />
       <TechStack />
       <Project
-        imageSrc="imagem-normal.jpg" // Certifique-se de que esse caminho também está correto ou importe a imagem se necessário
+        imageSrc="imagem-normal.jpg" 
         imageAlt="Imagem do Projeto"
         backgroundColor="#7eafb7"
         fontColor="#F5F5F5"
@@ -27,7 +27,7 @@ function App() {
         imagePosition="left" 
       />
       <Project
-        imageSrc="imagem-normal.jpg" // Certifique-se de que esse caminho também está correto ou importe a imagem se necessário
+        imageSrc="imagem-normal.jpg" 
         imageAlt="Imagem do Projeto"
         backgroundColor='#353535'
         fontColor="#F5F5F5"
@@ -38,7 +38,7 @@ function App() {
         imagePosition="right" 
       />
       <Project
-        imageSrc="imagem-normal.jpg" // Certifique-se de que esse caminho também está correto ou importe a imagem se necessário
+        imageSrc="imagem-normal.jpg"
         imageAlt="Imagem do Projeto"
         hoverImageSrc={siteYasmin}
         hoverImageAlt="Imagem em Preto e Branco"

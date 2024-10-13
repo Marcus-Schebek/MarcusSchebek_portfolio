@@ -11,7 +11,6 @@ interface ProjectProps {
     imagePosition?: 'left' | 'right';
     backgroundColor?: string; 
     fontColor?: string; 
-    slideEffect: string;
 }
 
 const Project: React.FC<ProjectProps> = ({
