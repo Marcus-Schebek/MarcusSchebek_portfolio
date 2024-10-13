@@ -1,32 +1,18 @@
 .project {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "image description";
+  display: block;
   margin: 20px;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  align-items: center;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   min-height: 250px;
-  gap: 20px;
-}
-
-.project.left {
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "image description";
-}
-
-.project.right {
-  grid-template-columns: 1fr auto;
-  grid-template-areas: "description image";
+  gap: 10px;
 }
 
 .project-image-wrapper {
-  grid-area: image;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +22,7 @@
 .project-image {
   position: relative;
   width: 100%;
-  max-width: 426px;
+  max-width: 100%;
   height: auto;
   overflow: hidden;
   border-radius: 8px;
@@ -72,13 +58,12 @@
 
 .project-image .overlay h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--primary-color);
   font-family: var(--primary-font);
 }
 
 .project-description {
-  grid-area: description;
   font-family: var(--secondary-font);
   padding: 20px;
   display: flex;
@@ -89,28 +74,111 @@
 
 .project-description p {
   margin: 0;
+  font-size: 16px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+@media (min-width: 480px) {
   .project {
-   display: inline-block;
-   padding: 0.5em;
-   align-items: center;
-   justify-items: center;
+    padding: 0.5em;
+    gap: 20px;
   }
-}
 
-@media (max-width: 480px) {
-  .project {
-   display: inline-block;
-   padding: 0.25em;
-   align-items: center;
-   justify-items: center;
-   gap: 10px;
-  }
-  .project-description{
+  .project-description {
     font-size: 18px;
   }
 }
 
+@media (min-width: 768px) {
+  .project {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image description";
+    margin: 20px;
+    max-width: 97%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    min-height: 250px;
+    gap: 20px;
+  }
+
+  .project.left {
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image description";
+  }
+  
+  .project.right {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "description image";
+  }
+  .project-image-wrapper {
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .project-image {
+    position: relative;
+    width: 100%;
+    max-width: 426px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-image:hover .overlay {
+    opacity: 1;
+  }
+  
+  .project-image .overlay h2 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+  }
+  
+  .project-description {
+    grid-area: description;
+    font-family: var(--secondary-font);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .project-description p {
+    margin: 0;
+  }
+}
