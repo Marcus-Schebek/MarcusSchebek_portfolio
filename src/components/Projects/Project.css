@@ -14,7 +14,9 @@ body {
   min-height: 250px;
   gap: 10px;
 }
-
+a{
+  text-decoration: none;
+}
 .project-image-wrapper {
   display: flex;
   justify-content: center;

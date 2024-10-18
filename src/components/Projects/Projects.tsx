@@ -11,6 +11,7 @@ interface ProjectProps {
     imagePosition?: 'left' | 'right';
     backgroundColor?: string; 
     fontColor?: string; 
+    link: string;
 }
 
 const Project: React.FC<ProjectProps> = ({
@@ -18,14 +19,13 @@ const Project: React.FC<ProjectProps> = ({
     hoverImageAlt,
     title,
     description,
+    link,
     imagePosition = 'left',
     backgroundColor = '#f5f5f5', 
     fontColor = '#000000' 
 }) => {
     return (
-        <div 
-        className={`project ${imagePosition}`} 
-        style={{ backgroundColor: backgroundColor, color: fontColor }}>
+        <a href={link} target="_blank" rel="noopener noreferrer" className={`project ${imagePosition}`} style={{ backgroundColor: backgroundColor, color: fontColor }}>
             <div className="project-image-wrapper">
                 <div className="project-image">
                     <img src={hoverImageSrc} alt={hoverImageAlt} className="image-hover" />
@@ -37,7 +37,7 @@ const Project: React.FC<ProjectProps> = ({
             <div className="project-description">
                 <p>{description}</p>
             </div>
-        </div>
+        </a>
     );
 };
 
